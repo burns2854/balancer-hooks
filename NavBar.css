@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.header-container {
+    background-image: url('images/main.svg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 1rem;
+    padding-left: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin-left: 2rem;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+

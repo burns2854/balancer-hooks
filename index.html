@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balancer V3 Hook Repo</title>
+    <link rel="stylesheet" href="hooks.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:&display=swap">
+
+</head>
+<body>
+    <div id="NavBar"></div>
+    <main>
+            <h2>Balancer V3 Hooks</h2>
+            <h3>Open Source Directory to find Balancer V3 Hooks</h3>
+            <h6>This repo is intended to be a single location to find all Balancer V3 hooks. Each hook contract is self contained and can be used to hook into Balancer V3 pool contracts without the need to fork or create custom pools. </h6>
+
+        <section id="filtering-options">
+            <form id="filter-form">
+                <select id="category">
+                    <option value="">All Categories</option>
+                    <option value="Oracle">Oracle</option>
+                    <option value="Token Gating">Token Gating</option>
+                </select>
+
+                <select id="source">
+                    <option value="">All Sources</option>
+                    <option value="Balancer">Balancer</option>
+                    <option value="Hackathon">Hackathon</option>
+                </select>
+
+                <input type="text" id="search" placeholder="Search...">
+
+            </form>
+        </section>
+
+        <section id="hooks">
+            <!-- Hooks added here by JavaScript -->
+
+        </section>
+
+    </main>
+
+    <div id="hookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <hookh1 id="hookModalTitle"></hookh1>
+            <p id="hookModalCreatedBy"></p>
+            <p id="hookModalCategory"></p>
+            <p id="hookModalSource"></p>
+            <p id="hookModalDescription"></p>
+            <a id="hookModalLink" href="#" target="_blank">View on Github</a>
+        </div>
+    </div>  
+
+    <div id="footer"></div>
+
+    <script src="hooks.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>

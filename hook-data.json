@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "title": "Authentication Hook",
+      "category": ["Security", "User Management"],
+      "source": "GitHub",
+      "description": "A hook contract for user authentication.",
+      "github": "https://github.com/example/auth-hook",
+      "additional_link": "https://example.com",
+      "created_by": "John Doe"
+    },
+    {
+      "id": 2,
+      "title": "Notification Hook",
+      "category": ["Communication"],
+      "source": "GitLab",
+      "description": "A hook contract for sending notifications.",
+      "github": "https://gitlab.com/example/notification-hook",
+      "additional_link": "",
+      "created_by": "Jane Smith"
+    },
+    {
+      "id": 3,
+      "title": "Data Validation Hook",
+      "category": ["Data Validation", "Data Processing"],
+      "source": "Bitbucket",
+      "description": "A hook contract for data validation before processing.",
+      "github": "https://bitbucket.org/example/data-validation-hook",
+      "additional_link": "",
+      "created_by": "Alice Johnson"
+    },
+    {
+      "id": 4,
+      "title": "Localization Hook",
+      "category": ["Utility"],
+      "source": "GitHub",
+      "description": "A hook contract for handling localization in the application.",
+      "github": "https://github.com/example/localization-hook",
+      "additional_link": "",
+      "created_by": "Bob Williams"
+    },
+    {
+      "id": 5,
+      "title": "Analytics Hook",
+      "category": ["Analytics", "Monitoring"],
+      "source": "GitLab",
+      "description": "A hook contract for tracking user interactions and collecting analytics data.",
+      "github": "https://gitlab.com/example/analytics-hook",
+      "additional_link": "",
+      "created_by": "Charlie Brown"
+    },
+    {
+      "id": 6,
+      "title": "Authentication Logging Hook",
+      "category": ["Security", "Logging"],
+      "source": "Bitbucket",
+      "description": "A hook contract for logging authentication events for audit purposes.",
+      "github": "https://bitbucket.org/example/authentication-logging-hook",
+      "additional_link": "",
+      "created_by": "David Wilson"
+    },
+    {
+      "id": 7,
+      "title": "Form Validation Hook",
+      "category": ["Forms", "Validation"],
+      "source": "GitHub",
+      "description": "A hook contract for client-side form validation.",
+      "github": "https://github.com/example/form-validation-hook",
+      "additional_link": "",
+      "created_by": "Emily Taylor"
+    },
+    {
+      "id": 8,
+      "title": "Image Processing Hook",
+      "category": ["Image Processing"],
+      "source": "GitLab",
+      "description": "A hook contract for processing and manipulating images.",
+      "github": "https://gitlab.com/example/image-processing-hook",
+      "additional_link": "",
+      "created_by": "Frank Miller"
+    },
+    {
+      "id": 9,
+      "title": "Authorization Hook",
+      "category": ["Security", "Authorization"],
+      "source": "Bitbucket",
+      "description": "A hook contract for handling user authorization and access control.",
+      "github": "https://bitbucket.org/example/authorization-hook",
+      "additional_link": "",
+      "created_by": "Grace Clark"
+    }
+]
