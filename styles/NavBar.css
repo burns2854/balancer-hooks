@@ -7,7 +7,7 @@ body {
 
 
 .header-container {
-    background-image: url('images/main.svg');
+    background-image: url('../images/main.svg');
     background-size: cover;
     background-position: center;
     color: #fff;

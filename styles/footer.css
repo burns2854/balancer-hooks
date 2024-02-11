@@ -1,0 +1,20 @@
+/* Footer styles */
+footer {
+    color: #000000;
+    text-align: left;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+.footer-container {
+    color: #000000;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+by {
+    color: #818181;
+    font-weight: 600;
+}

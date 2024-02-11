@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Authentication Hook",
+    "category": ["Security"],
+    "description": "A hook contract for user authentication.",
+    "additional_link": "https://example.com"
+  },
+  {
+    "id": 2,
+    "title": "TWAMM Integration",
+    "category": ["TWAMM"],
+    "description": "Integration with TWAMM platform.",
+    "additional_link": "https://example.com/twamm"
+  },
+  {
+    "id": 3,
+    "title": "Event Logging",
+    "category": ["Event"],
+    "description": "Logging events for monitoring and analytics.",
+    "additional_link": ""
+  },
+  {
+    "id": 4,
+    "title": "Oracle Integration",
+    "category": ["Oracle"],
+    "description": "Integration with Oracle database.",
+    "additional_link": "https://example.com/oracle"
+  },
+  {
+    "id": 5,
+    "title": "Token Gating Middleware",
+    "category": ["Token Gating"],
+    "description": "Middleware for token-based access control.",
+    "additional_link": ""
+  },
+  {
+    "id": 6,
+    "title": "Communication Service",
+    "category": ["Communication"],
+    "description": "Service for communication between components.",
+    "additional_link": "https://example.com/communication"
+  }
+]

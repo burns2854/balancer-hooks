@@ -28,7 +28,9 @@ form {
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
+    border-radius: 8px;
     cursor: pointer;
+    margin-bottom: 1em;
 }
 
 .dropdown-content {
@@ -37,6 +39,7 @@ form {
     background-color: #f9f9f9;
     min-width: 160px;
     border: 1px solid #ccc;
+    border-radius: 8px;
     z-index: 1;
 }
 

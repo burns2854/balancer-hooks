@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 2rem;
+}
+
+text {
+    margin-bottom: 2em;
+}
+
+#filtering-options {
+    margin-bottom: 0rem;
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+}
+
+#filtering-options form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#filtering-options form select {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 14px;
+}
+
+#search::placeholder {
+    color: #999;
+}
+
+#search:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Hook section styles */
+#hooks {
+    display: flex;
+    flex-wrap: wrap; /* Allow hooks to wrap to the next line */
+    justify-content: center; /* Center hooks horizontally */
+}
+
+#hooks h2 {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.hook {
+    flex: 0 0 calc(33.33% - 20px); 
+    max-width: 300px;
+    min-width: 250px;
+    max-height: 250px;
+    margin: 10px; 
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hook:hover {
+    transform: translateY(-5px);
+}
+
+.hook hookh1 {
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hook p {
+    margin: 8px 0;
+}
+
+.hook .category {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: calc(1.2em * 2);
+    line-height: 1.2em; 
+}
+
+.hook .source {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 1.2em;
+    line-height: 1.2em; 
+}
+
+.hook .description {
+    color: #555;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: calc(1.2em * 3); 
+    line-height: 1.2em;
+    font-size: 13px;
+}
+
+.hook .description::after {
+    content: '... read more';
+    color: #a8a8a8;
+    font-weight: 500;
+}
+
+.hook .created_by {
+    font-size: 12px;
+    font-weight: 600;
+    color: #a8a8a8;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 1.2em;
+    line-height: 1.2em;
+    margin-top: 0px; 
+}
+
+.hook a {
+    color: #7d45ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hook a:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hookModalTitle {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#hookModalCategory {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#hookModalSource {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#hookModalDescription {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#hookModalCreatedBy {
+    font-size: 14px;
+    font-weight: 600;
+    color: #999999;
+    line-height: 1.5;
+}
+
+.modal-content a {
+    color: #7d45ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+}

@@ -1,14 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const hooksSection = document.getElementById("hooks");
     const categoryDropdown = document.getElementById("category");
-    const sourceDropdown = document.getElementById("source");
     const searchInput = document.getElementById("search");
     const hooksModal = document.getElementById("hookModal");
     const hooksModalTitle = document.getElementById("hookModalTitle");
     const hooksModalCategory = document.getElementById("hookModalCategory");
-    const hooksModalSource = document.getElementById("hookModalSource");
     const hooksModalDescription = document.getElementById("hookModalDescription");
-    const hooksModalCreatedBy = document.getElementById("hookModalCreatedBy");
     const hooksModalLink = document.getElementById("hookModalLink");
 
     
@@ -23,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput.addEventListener("input", filterHooks);
 
     function fetchHooksData() {
-        fetch("hook-data.json")
+        fetch("rfps-data.json")
             .then(response => response.json())
             .then(data => {
                 hooksData = data;
@@ -55,40 +52,23 @@ document.addEventListener("DOMContentLoaded", function() {
         categoryElement.classList.add("category");
         hookElement.appendChild(categoryElement);
 
-        const sourceElement = document.createElement("p");
-        sourceElement.textContent = "Source: " + hook.source;
-        sourceElement.classList.add("source");
-        hookElement.appendChild(sourceElement);
-
         const descriptionElement = document.createElement("p");
         descriptionElement.textContent = hook.description;
         descriptionElement.classList.add("description");
         hookElement.appendChild(descriptionElement);
-
-        const created_byElement = document.createElement("p");
-        created_byElement.textContent = "Created by: " + hook.created_by;
-        created_byElement.classList.add("created_by");
-        hookElement.appendChild(created_byElement);
-        
-        const linkElement = document.createElement("a");
-        linkElement.href = hook.github;
-        linkElement.textContent = "View on Github";
-        hookElement.appendChild(linkElement);
 
         return hookElement;
     }
 
     function filterHooks() {
         const selectedCategory = categoryDropdown.value;
-        const selectedSource = sourceDropdown.value;
         const searchQuery = searchInput.value.toLowerCase();
 
         const filteredHooks = hooksData.filter(hook => {
             const matchesCategory = !selectedCategory || hook.category.includes(selectedCategory);
-            const matchesSource = !selectedSource || hook.source === selectedSource;
             const matchesSearch = !searchQuery || hook.title.toLowerCase().includes(searchQuery) || hook.description.toLowerCase().includes(searchQuery);
             
-            return matchesCategory && matchesSource && matchesSearch;
+            return matchesCategory && matchesSearch;
         });
 
         renderHooks(filteredHooks);
@@ -96,11 +76,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function displayHookModal(hook) {
         hooksModalTitle.textContent = hook.title;
-        hooksModalCreatedBy.textContent = hook.created_by;
         hooksModalCategory.textContent = "Category: " + hook.category.join(", ");
-        hooksModalSource.textContent = "Source: " + hook.source;
         hooksModalDescription.textContent = hook.description;
-        hooksModalLink.href = hook.github;
 
         hooksModal.style.display = "block";
     
