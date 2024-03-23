@@ -2,8 +2,21 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
     color: #333;
+}
+
+main {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: #fffdfb;
+}
+
+#NavBar {
+    position: fixed;
+    background-color: #f8f3ed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 h2 {

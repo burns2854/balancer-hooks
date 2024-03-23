@@ -1,16 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #fffdfb;
     color: #333;
 }
 
 
 .header-container {
-    background-image: url('../images/main.svg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #fffdfb;
     padding: 1rem;
     padding-left: 2rem;
     text-align: center;
@@ -20,6 +19,9 @@ body {
     align-items: center;
 }
 
+h1 {
+    color: #000000;
+}
 
 nav ul {
     list-style-type: none;
@@ -32,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #7a7a7a;
     text-decoration: none;
 }
 

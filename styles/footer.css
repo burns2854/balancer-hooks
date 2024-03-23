@@ -1,17 +1,21 @@
 /* Footer styles */
 footer {
-    color: #000000;
+    color: #f8f3ed;
     text-align: left;
     padding: 1rem;
     border-top: 1px solid #ccc;
 }
 
 .footer-container {
-    color: #000000;
+    color: #f8f3ed;
     padding-left: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+a {
+    color: #818181;
 }
 
 by {

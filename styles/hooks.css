@@ -5,9 +5,6 @@
 }
 
 /* Main styles */
-main {
-    padding: 2rem;
-}
 
 #filtering-options {
     margin-bottom: 0rem;
@@ -24,14 +21,14 @@ main {
 
 #filtering-options form select {
     padding: 0.5rem;
-    border-radius: 10px;
+    border-radius: 2px;
     border: 1px solid #ccc;
 }
 
 #search {
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 2px;
     width: 200px;
     font-size: 14px;
 }
@@ -65,9 +62,9 @@ main {
     margin: 10px; 
     padding: 20px;
     border: 1px solid #eaeaea;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background-color: #fffdfb;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -122,6 +119,16 @@ main {
     font-weight: 500;
 }
 
+.hook .audited {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 1.2em;
+    line-height: 1.2em; 
+}
+
 .hook .created_by {
     font-size: 12px;
     font-weight: 600;
@@ -159,11 +166,11 @@ main {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #fffdfb;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    border-radius: 20px;
+    border-radius: 2px;
     width: 80%;
     max-width: 600px;
     position: absolute;

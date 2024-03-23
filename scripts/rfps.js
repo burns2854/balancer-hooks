@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 hooksData = data;
                 renderHooks(hooksData);
             })
-            .catch(error => console.error("Error fetching hooks data:", error));
+            .catch(error => console.error("Error fetching RFP data:", error));
     }
 
     function renderHooks(hooks) {

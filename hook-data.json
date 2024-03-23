@@ -7,7 +7,8 @@
       "description": "A hook contract for user authentication.",
       "github": "https://github.com/example/auth-hook",
       "additional_link": "https://example.com",
-      "created_by": "John Doe"
+      "created_by": "John Doe",
+      "audited": "Yes"
     },
     {
       "id": 2,
@@ -17,7 +18,8 @@
       "description": "A hook contract for sending notifications.",
       "github": "https://gitlab.com/example/notification-hook",
       "additional_link": "",
-      "created_by": "Jane Smith"
+      "created_by": "Jane Smith",
+      "audited": "Yes"
     },
     {
       "id": 3,
@@ -27,7 +29,8 @@
       "description": "A hook contract for data validation before processing.",
       "github": "https://bitbucket.org/example/data-validation-hook",
       "additional_link": "",
-      "created_by": "Alice Johnson"
+      "created_by": "Alice Johnson",
+      "audited": "Yes"
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "description": "A hook contract for handling localization in the application.",
       "github": "https://github.com/example/localization-hook",
       "additional_link": "",
-      "created_by": "Bob Williams"
+      "created_by": "Bob Williams",
+      "audited": "No"
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "description": "A hook contract for tracking user interactions and collecting analytics data.",
       "github": "https://gitlab.com/example/analytics-hook",
       "additional_link": "",
-      "created_by": "Charlie Brown"
+      "created_by": "Charlie Brown",
+      "audited": "No"
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "description": "A hook contract for logging authentication events for audit purposes.",
       "github": "https://bitbucket.org/example/authentication-logging-hook",
       "additional_link": "",
-      "created_by": "David Wilson"
+      "created_by": "David Wilson",
+      "audited": "No"
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "description": "A hook contract for client-side form validation.",
       "github": "https://github.com/example/form-validation-hook",
       "additional_link": "",
-      "created_by": "Emily Taylor"
+      "created_by": "Emily Taylor",
+      "audited": "No"
     },
     {
       "id": 8,
@@ -77,6 +84,7 @@
       "description": "A hook contract for handling user authorization and access control.",
       "github": "https://bitbucket.org/example/authorization-hook",
       "additional_link": "",
-      "created_by": "Grace Clark"
+      "created_by": "Grace Clark",
+      "audited": "No"
     }
 ]
