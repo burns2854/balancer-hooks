@@ -68,6 +68,7 @@ main {
 .hook {
     flex: 0 0 calc(33.33% - 20px); 
     max-width: 300px;
+    max-height: 320px;
     min-width: 250px;
     margin: 10px;
     padding: 20px;
@@ -86,9 +87,9 @@ main {
                 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.hook h1 {
-    font-size: 18px;
-    font-weight: 700;
+.hook hookh1 {
+    font-size: 20px;
+    font-weight: 800;
     margin-top: 0;
     margin-bottom: 10px;
     color: #333; 
@@ -104,7 +105,7 @@ main {
 .hook .audited,
 .hook .created_by {
     font-size: 14px;
-    color: #000000; 
+    color: #555555; 
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -118,11 +119,6 @@ main {
     max-height: calc(1.4em * 3); 
 }
 
-.hook .description::after {
-    content: '... read more';
-    color: #007bff; /* Highlighted text color for "read more" */
-    font-weight: 500;
-}
 
 .hook .created_by {
     font-weight: 600;
