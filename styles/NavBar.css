@@ -5,36 +5,53 @@ body {
     color: #333;
 }
 
-
 .header-container {
     background-size: cover;
     background-position: center;
     color: #fffdfb;
     padding: 1rem;
     padding-left: 2rem;
-    text-align: center;
     border-radius: 5px;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
+    text-align: left; 
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    max-height: 35px;
 }
 
 h1 {
     color: #000000;
+    font-size: 24px;
+    margin: 0;
+    margin-left: 15px;
+}
+
+nav {
+    margin-left: auto;
 }
 
 nav ul {
     list-style-type: none;
     margin-left: 2rem;
+    padding: 0; 
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 1rem;
 }
 
 nav ul li a {
-    color: #7a7a7a;
+    color: #414141;
     text-decoration: none;
 }
-

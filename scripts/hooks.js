@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const hooksModalSource = document.getElementById("hookModalSource");
     const hooksModalDescription = document.getElementById("hookModalDescription");
     const hooksModalCreatedBy = document.getElementById("hookModalCreatedBy");
+    const hooksModalAudited = document.getElementById("hookModalAudited");
     const hooksModalLink = document.getElementById("hookModalLink");
 
     
@@ -95,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const matchesCategory = !selectedCategory || hook.category.includes(selectedCategory);
             const matchesSource = !selectedSource || hook.source === selectedSource;
             const matchesAudited = !selectedAudited || hook.audited === selectedAudited;
-            const matchesSearch = !searchQuery || hook.title.toLowerCase().includes(searchQuery) || hook.description.toLowerCase().includes(searchQuery);
+            const matchesSearch = !searchQuery || hook.title.toLowerCase().includes(searchQuery) || hook.description.toLowerCase().includes(searchQuery) || hook.created_by.toLowerCase().includes(searchQuery);
             
             return matchesCategory && matchesSource && matchesAudited && matchesSearch;
         });
@@ -109,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
         hooksModalCategory.textContent = "Category: " + hook.category.join(", ");
         hooksModalSource.textContent = "Source: " + hook.source;
         hooksModalDescription.textContent = hook.description;
+        hooksModalAudited.textContent = "Audited: " + hook.audited;
         hooksModalLink.href = hook.github;
 
         hooksModal.style.display = "block";

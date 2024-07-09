@@ -3,17 +3,18 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #EBE8E0;
 }
 
 main {
     padding-top: 100px;
     padding-bottom: 20px;
-    background-color: #fffdfb;
+    background-color: #EBE8E0;
 }
 
 #NavBar {
     position: fixed;
-    background-color: #f8f3ed;
+    background-color: #EBE8E0;
     top: 0;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
