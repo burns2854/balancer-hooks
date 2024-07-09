@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
         hooksModalCategory.textContent = "Category: " + hook.category.join(", ");
         hooksModalSource.textContent = "Source: " + hook.source;
         hooksModalDescription.textContent = hook.description;
-        hooksModalAudited.textContent = "Audited: " + hook.audited;
+        hooksModalAudited.textContent = "Audited?: " + hook.audited;
         hooksModalLink.href = hook.github;
 
         hooksModal.style.display = "block";

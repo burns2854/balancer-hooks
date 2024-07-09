@@ -153,7 +153,7 @@ main {
 }
 
 .modal-content {
-    background-color: #ffffff;
+    background-color: #EBE8E0;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -164,6 +164,9 @@ main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: inset 1px 1px 4px rgba(255, 255, 255, .5),
+                inset -1px -1px 4px  rgba(0, 0, 0, .3),
+                2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 #hookModalTitle {
