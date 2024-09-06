@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Geomean Oracle",
+    "category": ["Oracle"],
+    "description": "A hook making a pool function as an oracle. The geomean price is calculated using the prices of the assets in the pool. This can be used to get a more accurate price for an asset than a single oracle.",
+    "additional_link": ""
+  },
+  {
+    "id": 2,
+    "title": "TWAMM",
+    "category": ["AMM"],
+    "description": "A TWAMM (Time Weighted Average Market Maker) is a type of market maker that uses time-weighted averages to calculate the prices of assets. This can be used to reduce the volatility of the market and to provide more accurate prices for assets.",
+    "additional_link": "https://www.paradigm.xyz/2021/07/twamm"
+  },
+  {
+    "id": 3,
+    "title": "Limit Orders",
+    "category": ["AMM"],
+    "description": "Hook to implement stop-loss mechanism",
+    "additional_link": ""
+  },
+  {
+    "id": 4,
+    "title": "NFT liquidity positions to track non-fungbile metadata (not CL)",
+    "category": ["Metadata"],
+    "description": "Requires hook to be router for add/remove, any other router should be rejected. Router keeps the BPT, keeps track of who owns how many shares (or potentially issues an NFT). Store non-fungible metadata on the hook (deposit time)",
+    "additional_link": ""
+  },
+  {
+    "id": 5,
+    "title": "Token Gating",
+    "category": ["Token Gating"],
+    "description": "Hooks to control various features based on the wallet owning a specific token or NFT.",
+    "additional_link": ""
+  },
+  {
+    "id": 6,
+    "title": "Auction Managed AMM (amAMM)",
+    "category": ["AMM"],
+    "description": "Auction-managed AMM (am-AMM), an AMM design that targets both LVR reduction and fee optimization with one mechanism.",
+    "additional_link": "https://arxiv.org/html/2403.03367v1"
+  },
+  {
+    "id": 7,
+    "title": "Dynamic Fees",
+    "category": ["Fees"],
+    "description": "Alter the fee charged based on various factors",
+    "additional_link": ""
+  },
+  {
+    "id": 8,
+    "title": "MEV Taxes",
+    "category": ["MEV"],
+    "description": "An AMM can capture MEV by charging an extra fee as a function of the priority fee on the transaction, allowing it to auction off the right to trade first in the block.",
+    "additional_link": "https://www.paradigm.xyz/2024/06/priority-is-all-you-need"
+  },
+  {
+    "id": 9,
+    "title": "Volatility Oracle",
+    "category": ["Oracle"],
+    "description": "A volatility oracle is a contract that provides information about the volatility of an asset. This information can be used to price options and other derivatives.",
+    "additional_link": ""
+  }
+]

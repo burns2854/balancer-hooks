@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balancer V3 Hook Repo</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/ideas.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:&display=swap">
+
+</head>
+<body>
+
+    <div id="NavBar"></div>
+
+    <main>
+        <h2>Browse current hooks ideas</h2>
+        <h6>This is a list of open ideas for hooks. Browse these below to see if there's something you'd like to build.</h6>
+        <h6>We are always looking for new ideas, reach out to grants@balancer.community to have a new one added here.</h6>
+        <section id="filtering-options">
+            <form id="filter-form">
+                <select id="category">
+                    <option value="">All Categories</option>
+                    <option value="Security">Security</option>
+                    <option value="Communication">Communication</option>
+                    <option value="TWAMM">TWAMM</option>         
+                    <option value="Event">Event</option>           
+                    <option value="Oracle">Oracle</option>
+                    <option value="Token Gating">Token Gating</option>
+                </select>
+
+                <input type="text" id="search" placeholder="Search...">
+
+            </form>
+        </section>
+
+        <section id="hooks">
+        </section>
+    </main>
+    
+    <div id="hookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <hookh1 id="hookModalTitle"></hookh1>
+            <p id="hookModalCategory"></p>
+            <p id="hookModalDescription"></p>
+            <a id="hookModalLink" href="#" target="_blank">Additional Information</a>
+        </div>
+    </div>  
+
+    <div id="footer"></div>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/ideas.js"></script>
+</body>
+</html>

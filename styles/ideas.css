@@ -60,7 +60,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-    gap: .5 rem;
+    gap: 0.5 rem;
     padding: 5px;
     padding-top: 0px;
 }
@@ -68,7 +68,7 @@ main {
 .hook {
     flex: 0 0 calc(33.33% - 20px); 
     max-width: 300px;
-    max-height: 320px;
+    max-height: 260px;
     min-width: 250px;
     margin: 10px;
     padding: 20px;
@@ -93,6 +93,12 @@ main {
     margin-top: 0;
     margin-bottom: 10px;
     color: #333; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: calc(1.4em * 2);
+    line-height: 1.4em; 
 }
 
 .hook p {
@@ -100,23 +106,15 @@ main {
 }
 
 .hook .category,
-.hook .source,
-.hook .description,
-.hook .audited,
-.hook .created_by {
+.hook .description {
     font-size: 14px;
     color: #555555; 
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    max-height: calc(1.4em * 3);
+    max-height: calc(1.4em * 5);
     line-height: 1.4em; 
-}
-
-.hook .created_by {
-    font-weight: 600;
-    margin-top: 0; 
 }
 
 .hook a {
@@ -174,18 +172,10 @@ main {
 }
 
 #hookModalCategory,
-#hookModalSource,
-#hookModalDescription,
-#hookModalAudited,
-#hookModalCreatedBy {
+#hookModalDescription {
     font-size: 14px;
     line-height: 1.5;
     color: #000000; /* Light grey text color */
-}
-
-#hookModalCreatedBy {
-    font-weight: 600;
-    color: #999999; /* Slightly different shade for emphasis */
 }
 
 .modal-content a {
