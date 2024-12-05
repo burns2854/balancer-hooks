@@ -60,7 +60,7 @@
       "category": ["Prediction Market"],
       "source": "v3 Hookathon - Oct 2024",
       "description": "This hook allows any registered pool to permissionlessly host prediction markets. Participants speculate on whether the price of a pair at some point in the future will be above or below the current price. Each side has a corresponding floating market price governed by UniswapV2 math. At expiration the winners split the balance of the deposited liquidity minus fees.",
-      "github": "github.com/shift0x/prediction-market-hook",
+      "github": "https://github.com/shift0x/prediction-market-hook",
       "additional_link": "https://dorahacks.io/buidl/17576",
       "created_by": "shift0x",
       "audited": "No"
@@ -115,7 +115,7 @@
       "category": ["meme coin"],
       "source": "v3 Hookathon - Oct 2024",
       "description": "A Balancer v3 hook which creates a fair launch liquidity pool for memecoins",
-      "github": "github.com/jamesbachini/scaffold-balancer-v3",
+      "github": "https://github.com/jamesbachini/scaffold-balancer-v3",
       "additional_link": "https://dorahacks.io/buidl/17054",
       "created_by": "jamesbachini",
       "audited": "No"
@@ -214,7 +214,7 @@
       "category": ["Fee","Token Gating"],
       "source": "v3 Hookathon - Oct 2024",
       "description": "A Balancer V3 hook designed to increase user engagement by rewarding users with loyalty tokens (LOYALTY) and providing dynamic fee adjustments based on their LOYALTY token balance",
-      "github": "github.com/Chainkraft/scaffold-balancer-v3",
+      "github": "https://github.com/Chainkraft/scaffold-balancer-v3",
       "additional_link": "https://dorahacks.io/buidl/16907",
       "created_by": "Chainkraft",
       "audited": "No"
@@ -225,7 +225,7 @@
       "category": ["NFT","RWA"],
       "source": "v3 Hookathon - Oct 2024",
       "description": "NftCheckHook.sol is a Balancer v3 hook to allow a liquidity pool to be backed by an NFT. This is accomplished by staking it into this escrow hook which mints an ERC20 to represent it fractionally. The hook also enables the depositor to settle the pool at the current market rate - in essence this is buying paying for all outstanding NFT-based ERC20 tokens (aka linked or asset tokens) by depositing the required amount of the counterpart (stable) token into the escrow hook contract which then releases the NFT. Then the holders of the linked tokens can redeem their linked tokens for stable tokens using the hook.",
-      "github": "github.com/DAOhaus/rwa-pools",
+      "github": "https://github.com/DAOhaus/rwa-pools",
       "additional_link": "https://dorahacks.io/buidl/17050",
       "created_by": "DAOhaus",
       "audited": "No"
